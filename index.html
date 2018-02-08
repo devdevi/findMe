@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+       <meta charset="UTF-8">
+      <title>FIND ME</title>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+
+      <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+
+    <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="row red darken-4 ">
+          <div class="col s1">
+           <a id="logo-container" href="#" class="brand-logo"><img id="logo" src="assets/logo.jpeg" alt=""></a>  
+          </div>
+          <div class="col s4">
+            <nav>
+              <div class="nav-wrapper red darken-4 ">
+                <form>
+                  <div class="input-field">
+                    <input id="searchInit" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+            </nav>
+          </div>
+          <div class="col s4">
+            <nav>
+              <div class="nav-wrapper red darken-4">
+                <form>
+                  <div class="input-field">
+                    <input id="searchEnd" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+            </nav>  
+          </div>
+          <div class="col s1">
+            <a class="waves-effect waves-teal white-text btn-flat" id="makeRout">Trazar Ruta</a>
+          </div>
+          <div class="col s2">
+            <a class="waves-effect waves-teal white-text btn-flat" id="searchMe">Encuentrame</a>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+     <div class="container-fluid">
+
+      <div class="row">
+        <div class="col s12" id="map">
+          
+        </div>
+      </div>
+   </div>
+
+
+
+
+       <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB77YJD1n-YZDHN2HblLg8ArASiOs2h33I&callback=initMap&libraries=places" >
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="assets/js/app.js"></script>
+    </body>
+  </html
+ 
