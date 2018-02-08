@@ -4,6 +4,7 @@
        <meta charset="UTF-8">
       <title>FIND ME</title>
       <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -14,55 +15,37 @@
     </head>
 
     <body>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="row red darken-4 ">
-          <div class="col s1">
-           <a id="logo-container" href="#" class="brand-logo"><img id="logo" src="assets/logo.jpeg" alt=""></a>  
-          </div>
-          <div class="col s4">
-            <nav>
-              <div class="nav-wrapper red darken-4 ">
-                <form>
-                  <div class="input-field">
-                    <input id="searchInit" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                  </div>
-                </form>
-              </div>
-            </nav>
-          </div>
-          <div class="col s4">
-            <nav>
-              <div class="nav-wrapper red darken-4">
-                <form>
-                  <div class="input-field">
-                    <input id="searchEnd" type="search" required>
-                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
-                  </div>
-                </form>
-              </div>
-            </nav>  
-          </div>
-          <div class="col s1">
-            <a class="waves-effect waves-teal white-text btn-flat" id="makeRout">Trazar Ruta</a>
-          </div>
-          <div class="col s2">
-            <a class="waves-effect waves-teal white-text btn-flat" id="searchMe">Encuentrame</a>
-          </div>
-        </div>
-      </nav>
-      </div>
 
-     <div class="container-fluid">
+     <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper red darken-4">
+            <a href="#!" class="brand-logo"><img id="logo" src="assets/logo.jpeg" alt=""></a>  
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down ">
+              <li><a class="white-text btn-flat">Origen</a></li>
+              <li><input id="searchInit" type="search"  required></li>
+              <li><a class="white-text btn-flat">Destino</a></li>
+              <li><input id="searchEnd" type="search" required></li>
+              <li><a class="waves-effect waves-red white-text btn-flat" id="makeRout">Trazar Ruta</a></li>
+              <li><a class="waves-effect waves-red white-text btn-flat" id="searchMe">Encuentrame</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a class="white-text btn-flat">Origen</a></li>
+              <li><input id="searchInit" type="search"  required></li>
+              <li><a class="white-text btn-flat">Destino</a></li>
+              <li><input id="searchEnd" type="search" required></li>
+              <li><a class="waves-effect waves-red white-text btn-flat" id="makeRout">Trazar Ruta</a></li>
+              <li><a class="waves-effect waves-red white-text btn-flat" id="searchMe">Encuentrame</a></li>
+            </ul>
+          </div>
+        </nav>
+     </div>
 
-      <div class="row">
-        <div class="col s12" id="map">
-          
-        </div>
-      </div>
+
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col s12" id="map"></div>
+    </div>
    </div>
 
 

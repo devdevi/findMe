@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  $('.button-collapse').sideNav();
+});
 function initMap() {
   var santiago = {lat: -33.4317485,
     lng: -70.663317};
@@ -6,7 +9,7 @@ function initMap() {
     center: santiago
   });
   // Agregar un markador
-  var logo = 'http://maps.google.com/mapfiles/kml/shapes/cycling.png';
+  var logo = 'http://maps.google.com/mapfiles/kml/paddle/grn-stars.png';
   var marker = new google.maps.Marker({
     position: santiago,
     icon: logo,
@@ -27,7 +30,7 @@ function initMap() {
     latitude = posicion.coords.latitude;
     longitude = posicion.coords.longitude;
 
-    var image = 'http://maps.google.com/mapfiles/kml/shapes/cycling.png';
+    var image = 'http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png';
 
     var miUbicacion = new google.maps.Marker({
       position: {lat: latitude,
